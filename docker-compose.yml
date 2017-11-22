@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    deploy:
+      replicas: 2
+    image: "docker-web"
+    ports:
+      - "8080:8080"
+  server:
+    deploy:
+      replicas: 2
+    image: "docker-server"
+    ports:
+      - "8081"
